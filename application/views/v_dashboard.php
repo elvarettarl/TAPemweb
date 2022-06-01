@@ -8,7 +8,7 @@
                 <div class="col-12">
                     <div class="hero-content">
                         <h6>Welcome To</h6>
-                        <h2>Moklet Market</h2>
+                        <h2>Re-Cloth</h2>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-18.png);">
                     </div>
                     <div class="catagory-content">
-                            <a href="Kategori/kecantikan">&nbsp Beauty</a>
+                            <a href="Kategori/kecantikan">&nbsp Jaket</a>
                     </div>
                 </div>
                 <!-- Single Catagory -->
@@ -33,7 +33,7 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-19.png);">
                     </div>
                     <div class="catagory-content">
-                            <a href="Kategori/pakaian">&nbsp Clothes</a>
+                            <a href="Kategori/pakaian">&nbsp Kaos</a>
                     </div>
                 </div>
                 <!-- Single Catagory -->
@@ -41,7 +41,7 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-20.png);">
                     </div>
                     <div class="catagory-content">
-                            <a href="Kategori/peralatanatk">Stationery</a>
+                            <a href="Kategori/peralatanatk">Celana</a>
                     </div>
                 </div>
                 <!-- Single Catagory -->
@@ -49,7 +49,7 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-21.png);">
                     </div>
                     <div class="catagory-content">
-                            <a href="Kategori/makananminuman">Food & Drink</a>
+                            <a href="Kategori/makananminuman">Kemeja</a>
                     </div>
                 </div>
             </div>
@@ -85,9 +85,9 @@
                             <div class="product-description">
                                 <span>user: </span>
                                 <a href="single-product-details.html">
-                                    <h6>Masker Maomo</h6>
+                                    <h6>Sweater Nike Spring Edition</h6>
                                 </a>
-                                <p class="product-price">Rp.15.000</p>
+                                <p class="product-price">Rp.75.000</p>
 
                                 <!-- Hover Content -->
                                 <!-- <div class="hover-content"> -->
@@ -110,9 +110,9 @@
                             <div class="product-description">
                                 <span>user: </span>
                                 <a href="single-product-details.html">
-                                    <h6>Jilbab Instan</h6>
+                                    <h6>Cardigan Korea Mingyu</h6>
                                 </a>
-                                <p class="product-price">Rp.35.000</p>
+                                <p class="product-price">Rp.49.000</p>
 
                                 <!-- Hover Content -->
                                 <!-- <div class="hover-content"> -->
@@ -135,9 +135,9 @@
                             <div class="product-description">
                                 <span>user: </span>
                                 <a href="single-product-details.html">
-                                    <h6>Mie Instan</h6>
+                                    <h6>Kaos Polo Premium</h6>
                                 </a>
-                                <p class="product-price">Rp.12.000</p>
+                                <p class="product-price">Rp.25.000</p>
 
                                 <!-- Hover Content -->
                                 <!-- <div class="hover-content"> -->
@@ -160,9 +160,9 @@
                             <div class="product-description">
                                 <span>user: </span>
                                 <a href="single-product-details.html">
-                                    <h6>Catering Nadian</h6>
+                                    <h6>Kulot Paris Khaki</h6>
                                 </a>
-                                <p class="product-price">Rp.10.000</p>
+                                <p class="product-price">Rp.21.000</p>
 
                                 <!-- Hover Content -->
                                 <!-- <div class="hover-content"> -->
