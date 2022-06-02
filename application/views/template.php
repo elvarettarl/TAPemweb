@@ -136,14 +136,14 @@
 
 				<h2>ORDER</h2>
 				<div style="margin-top:-80px;">
-				<p>Nama </p> 
-				<div class="input-group flex-nowrap">
+				<p>Nama Pembeli</p> 
+				<div class="input-group flex-nowrap mb-15">
 				  <input type="text" value="<?=$_SESSION['nama_pembeli']?>"  disabled style="margin-top:-20px;" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
 				</div>
-				<p>Kelas </p> 
+				<!-- <p>Kelas </p> 
 				<div class="input-group flex-nowrap">
 				  <input type="text" value="<?=$_SESSION['kelas']?>"  disabled style="margin-top:-20px;" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
-				</div>
+				</div> -->
 				</div>
 				<?php $total = 0; ?>
 				<table class="table">
@@ -174,7 +174,7 @@
 						<?php endforeach; ?>
 					</tbody>
 						</table>
-						<button style="" id="btn btn-success">UBAH</button> <br> <br>
+						<button class="btn btn-primary btn-sm">UBAH</button> <br> <br>
 					</form>
 				
 				<ul class="summary-table">
@@ -182,7 +182,7 @@
 					<!-- <li><span>discount:</span> <span>-15%</span></li> -->
 					<!-- <li><span>total:</span> <span>$232.00</span></li> -->
 				</ul>
-				<div class="checkout-btn mt-100" style>
+				<div class="checkout-btn" style>
 					<a href="#" onclick="return checkout();" class="btn essence-btn">check out</a>
 				</div>	
 			</div>

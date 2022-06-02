@@ -419,7 +419,7 @@ img {
 /* Cart Area CSS */
 .right-side-cart-area {
   position: fixed;
-  width: 670px;
+  width: 370px;
   height: 100%;
   top: 0;
   right: -800px;
@@ -570,13 +570,13 @@ img {
         .right-side-cart-area .cart-content .cart-list .single-cart-item:hover .product-image .cart-item-desc {
           background-color: rgba(0, 0, 0, 0.8); }
     .right-side-cart-area .cart-content .cart-amount-summary {
-      padding: 100px 10%;
+      padding: 20px 10%;
       position: relative;
       z-index: 10;
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(100% - 190px);
-      flex: 0 0 calc(100% - 190px);
-      width: calc(100% - 190px); }
+      -ms-flex: 0 0 calc(100%);
+      flex: 0 0 calc(100%);
+      width: calc(100%); }
       @media only screen and (max-width: 767px) {
         .right-side-cart-area .cart-content .cart-amount-summary {
           -webkit-box-flex: 0;
