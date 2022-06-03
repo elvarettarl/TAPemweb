@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="page-title text-center">
-			<h2>Alat Tulis Menulis</h2>
+			<h2>Celana</h2>
 		</div>
 	</div>
 </div>

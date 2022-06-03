@@ -28,7 +28,7 @@
 			<nav class="classy-navbar" id="essenceNav">
 				<!-- Logo -->
 				<a class="nav-brand" href="<?= base_url() ?>Dashboard"><img
-						src="<?= base_url() ?>assets/img/core-img/TSS-10-10.png" alt=""></a>
+						src="<?= base_url() ?>assets/img/core-img/logo3.png" alt=""></a>
 				<!-- Navbar Toggler -->
 				<div class="classy-navbar-toggler">
 					<span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -45,17 +45,17 @@
 							<li><a href="#">Category</a>
 								<div class="megamenu">
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/makananminuman">Makanan & Minuman</a>
+										<li><a href="<?= base_url() ?>kategori/makananminuman">Jaket</a>
 										</li>
 									</ul>
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/pakaian">Pakaian</a></li>
+										<li><a href="<?= base_url() ?>kategori/pakaian">Kaos</a></li>
 									</ul>
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/kecantikan">Kecantikan</a></li>
+										<li><a href="<?= base_url() ?>kategori/kecantikan">Celana</a></li>
 									</ul>
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/peralatanatk">Peralatan ATK</a></li>
+										<li><a href="<?= base_url() ?>kategori/peralatanatk">Kemeja</a></li>
 									</ul>
 								</div>
 							</li>
@@ -136,14 +136,14 @@
 
 				<h2>ORDER</h2>
 				<div style="margin-top:-80px;">
-				<p>Nama </p> 
-				<div class="input-group flex-nowrap">
+				<p>Nama Pembeli</p> 
+				<div class="input-group flex-nowrap mb-15">
 				  <input type="text" value="<?=$_SESSION['nama_pembeli']?>"  disabled style="margin-top:-20px;" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
 				</div>
-				<p>Kelas </p> 
+				<!-- <p>Kelas </p> 
 				<div class="input-group flex-nowrap">
 				  <input type="text" value="<?=$_SESSION['kelas']?>"  disabled style="margin-top:-20px;" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
-				</div>
+				</div> -->
 				</div>
 				<?php $total = 0; ?>
 				<table class="table">
@@ -174,7 +174,7 @@
 						<?php endforeach; ?>
 					</tbody>
 						</table>
-						<button style="" id="btn btn-success">UBAH</button> <br> <br>
+						<button class="btn btn-primary btn-sm">UBAH</button> <br> <br>
 					</form>
 				
 				<ul class="summary-table">
@@ -182,7 +182,7 @@
 					<!-- <li><span>discount:</span> <span>-15%</span></li> -->
 					<!-- <li><span>total:</span> <span>$232.00</span></li> -->
 				</ul>
-				<div class="checkout-btn mt-100" style>
+				<div class="checkout-btn" style>
 					<a href="#" onclick="return checkout();" class="btn essence-btn">check out</a>
 				</div>	
 			</div>
@@ -204,7 +204,7 @@
 					<div class="single_widget_area d-flex mb-30">
 						<!-- Logo -->
 						<div class="footer-logo mr-50">
-							<a href="#"><img src="<?= base_url() ?>assets/img/core-img/TSS-10-10.png" alt=""></a>
+							<a href="#"><img src="<?= base_url() ?>assets/img/core-img/logo3.png" alt=""></a>
 						</div>
 						<!-- Footer Menu -->
 						<div class="footer_menu">
