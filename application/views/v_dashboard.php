@@ -19,7 +19,7 @@
             <div class="row justify-content-center">
                 <!-- Single Catagory -->
                 <div class="col-12 col-sm-3">
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-18.png);">
+                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-kemeja.png);">
                     </div>
                     <div class="catagory-content">
                             <a href="Kategori/kecantikan">&nbsp Kemeja</a>
@@ -27,7 +27,7 @@
                 </div>
                 <!-- Single Catagory -->
                 <div class="col-12 col-sm-3">
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-19.png);">
+                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-kaos.png);">
                     </div>
                     <div class="catagory-content">
                             <a href="Kategori/pakaian">&nbsp Kaos</a>
@@ -35,7 +35,7 @@
                 </div>
                 <!-- Single Catagory -->
                 <div class="col-12 col-sm-3">
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-20.png);">
+                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-celana.png);">
                     </div>
                     <div class="catagory-content">
                             <a href="Kategori/peralatanatk">Celana</a>
@@ -43,7 +43,7 @@
                 </div>
                 <!-- Single Catagory -->
                 <div class="col-12 col-sm-3">
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-21.png);">
+                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-jaket.png);">
                     </div>
                     <div class="catagory-content">
                             <a href="Kategori/makananminuman">Jaket</a>
@@ -75,16 +75,16 @@
                          <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="<?= base_url() ?>assets/img/product-img/TSS-11.png" alt="">
+                                <img src="<?= base_url() ?>assets/img/product-img/TSS-lain4.jpg" alt="">
                                 
                             </div>
                             <!-- Product Description -->
                             <div class="product-description">
                                 <span>user: </span>
                                 <a href="single-product-details.html">
-                                    <h6>Sweater Nike Spring Edition</h6>
+                                    <h6>Scraft Mewah Blaster LV</h6>
                                 </a>
-                                <p class="product-price">Rp.75.000</p>
+                                <p class="product-price">Rp.399.990</p>
 
                                 <!-- Hover Content -->
                                 <!-- <div class="hover-content"> -->
@@ -100,16 +100,16 @@
                          <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="<?= base_url() ?>assets/img/product-img/TSS-13.png" alt="">
+                                <img src="<?= base_url() ?>assets/img/product-img/TSS-lain1.jpg" alt="">
                                 
                             </div>
                             <!-- Product Description -->
                             <div class="product-description">
                                 <span>user: </span>
                                 <a href="single-product-details.html">
-                                    <h6>Cardigan Korea Mingyu</h6>
+                                    <h6>Dasi Pita Kupu-Kupu Brown</h6>
                                 </a>
-                                <p class="product-price">Rp.49.000</p>
+                                <p class="product-price">Rp.11.000</p>
 
                                 <!-- Hover Content -->
                                 <!-- <div class="hover-content"> -->
@@ -125,14 +125,14 @@
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="<?= base_url() ?>assets/img/product-img/TSS-24.png" alt="">
+                                <img src="<?= base_url() ?>assets/img/product-img/TSS-lain2.jpg" alt="">
                                 
                             </div>
                             <!-- Product Description -->
                             <div class="product-description">
                                 <span>user: </span>
                                 <a href="single-product-details.html">
-                                    <h6>Kaos Polo Premium</h6>
+                                    <h6>Atasan Wanita Crewneck Peach</h6>
                                 </a>
                                 <p class="product-price">Rp.25.000</p>
 
@@ -150,16 +150,16 @@
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="<?= base_url() ?>assets/img/product-img/TSS-27.png" alt="">
+                                <img src="<?= base_url() ?>assets/img/product-img/TSS-lain3.jpg" alt="">
                                 
                             </div>
                             <!-- Product Description -->
                             <div class="product-description">
                                 <span>user: </span>
                                 <a href="single-product-details.html">
-                                    <h6>Kulot Paris Khaki</h6>
+                                    <h6>Topi Hitam Dior</h6>
                                 </a>
-                                <p class="product-price">Rp.21.000</p>
+                                <p class="product-price">Rp.490.090</p>
 
                                 <!-- Hover Content -->
                                 <!-- <div class="hover-content"> -->

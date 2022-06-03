@@ -45,17 +45,17 @@
 							<li><a href="#">Category</a>
 								<div class="megamenu">
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/makananminuman">Kemeja</a>
+										<li><a href="<?= base_url() ?>kategori/makananminuman">Jaket</a>
 										</li>
 									</ul>
 									<ul class="single-mega cn-col-4">
 										<li><a href="<?= base_url() ?>kategori/pakaian">Kaos</a></li>
 									</ul>
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/kecantikan">Celana</a></li>
+										<li><a href="<?= base_url() ?>kategori/kecantikan">Kemeja</a></li>
 									</ul>
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/peralatanatk">Jaket</a></li>
+										<li><a href="<?= base_url() ?>kategori/peralatanatk">Celana</a></li>
 									</ul>
 								</div>
 							</li>
