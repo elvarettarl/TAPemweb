@@ -23,8 +23,6 @@ class M_histori extends CI_Model {
         return $ambilhistori;
     }
 
-    // tambah komentar aku cantik kamu engga
-
     public function ambilhistori(){
         $ambilhistori = $this->db->join('produk','produk.id_produk=transaksi.id_produk')
                                  ->join('pembeli','pembeli.id_pembeli=transaksi.id_pembeli')

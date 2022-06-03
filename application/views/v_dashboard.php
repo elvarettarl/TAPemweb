@@ -1,7 +1,4 @@
-    
-    <!-- aku cantik 22222 -->
-    
-    <!-- ##### Welcome Area Start ##### -->
+        <!-- ##### Welcome Area Start ##### -->
     <section class="welcome_area bg-img background-overlay" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS0-07.png);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
