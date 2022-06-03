@@ -9,7 +9,7 @@
 	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<!-- Title  -->
-	<title>Moklet Market 00</title>
+	<title>Re-Cloth</title>
 
 	<!-- Favicon  -->
 	<link rel="icon" href="<?= base_url() ?>assets/img/core-img/favicon.ico">
@@ -45,7 +45,7 @@
 							<li><a href="#">Category</a>
 								<div class="megamenu">
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/makananminuman">Jaket</a>
+										<li><a href="<?= base_url() ?>kategori/makananminuman">Kemeja</a>
 										</li>
 									</ul>
 									<ul class="single-mega cn-col-4">
@@ -55,7 +55,7 @@
 										<li><a href="<?= base_url() ?>kategori/kecantikan">Celana</a></li>
 									</ul>
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/peralatanatk">Kemeja</a></li>
+										<li><a href="<?= base_url() ?>kategori/peralatanatk">Jaket</a></li>
 									</ul>
 								</div>
 							</li>

@@ -22,7 +22,7 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-18.png);">
                     </div>
                     <div class="catagory-content">
-                            <a href="Kategori/kecantikan">&nbsp Jaket</a>
+                            <a href="Kategori/kecantikan">&nbsp Kemeja</a>
                     </div>
                 </div>
                 <!-- Single Catagory -->
@@ -46,7 +46,7 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-21.png);">
                     </div>
                     <div class="catagory-content">
-                            <a href="Kategori/makananminuman">Kemeja</a>
+                            <a href="Kategori/makananminuman">Jaket</a>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="page-title text-center">
-			<h2>Jaket</h2>
+			<h2>Kemeja</h2>
 		</div>
 	</div>
 </div>
