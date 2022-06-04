@@ -207,11 +207,11 @@ img {
 
 /* ScrollUp */
 #scrollUp {
-  background-color: #ff084e;
+  background-color: #c1e1c1;
   border-radius: 0;
   bottom: 60px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
-  color: #ffffff;
+  color: #000000;
   font-size: 24px;
   height: 40px;
   line-height: 40px;
@@ -235,7 +235,7 @@ img {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 50px;
-  background-color: #e71620;
+  background-color: #c1e1c1;
   letter-spacing: 1.5px;
   font-weight: 600; }
   .essence-btn:hover, .essence-btn:focus {

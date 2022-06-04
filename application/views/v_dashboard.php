@@ -1,5 +1,5 @@
         <!-- ##### Welcome Area Start ##### -->
-    <section class="welcome_area bg-img background-overlay" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS0-07.png);">
+    <section class="welcome_area bg-img background-overlay" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS_lp.png);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -22,7 +22,7 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-kemeja.png);">
                     </div>
                     <div class="catagory-content">
-                            <a href="Kategori/kecantikan">&nbsp Kemeja</a>
+                            <a href="Kategori/kemeja">&nbsp Kemeja</a>
                     </div>
                 </div>
                 <!-- Single Catagory -->
@@ -30,7 +30,7 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-kaos.png);">
                     </div>
                     <div class="catagory-content">
-                            <a href="Kategori/pakaian">&nbsp Kaos</a>
+                            <a href="Kategori/kaos">&nbsp Kaos</a>
                     </div>
                 </div>
                 <!-- Single Catagory -->
@@ -38,7 +38,7 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-celana.png);">
                     </div>
                     <div class="catagory-content">
-                            <a href="Kategori/peralatanatk">Celana</a>
+                            <a href="Kategori/celana">Celana</a>
                     </div>
                 </div>
                 <!-- Single Catagory -->
@@ -46,7 +46,7 @@
                     <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-jaket.png);">
                     </div>
                     <div class="catagory-content">
-                            <a href="Kategori/makananminuman">Jaket</a>
+                            <a href="Kategori/jaket">Jaket</a>
                     </div>
                 </div>
             </div>

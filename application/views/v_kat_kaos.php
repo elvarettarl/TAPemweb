@@ -1,5 +1,5 @@
 <!-- ##### Breadcumb Area Start ##### -->
-<div class="breadcumb_area bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-30.png);">
+<div class="breadcumb_area bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-bg.png);">
 	<div class="container h-100">
 		<div class="row h-100 align-items-center">
 			<div class="col-12">
@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="page-title text-center">
-			<h2>Kemeja</h2>
+			<h2>Kaos</h2>
 		</div>
 	</div>
 </div>
@@ -89,8 +89,18 @@
             },
             success: function (res) {
 				window.location.reload();
-                // console.log(res);
+                console.log(res);
             }
         });
     }
+
+	function checkout() {
+		$.ajax({
+            url: "<?= base_url('') ?>produk/checkout",
+            method: "GET",
+            success: function (res) {
+				window.location.reload();
+            }
+        });
+	}
 </script>

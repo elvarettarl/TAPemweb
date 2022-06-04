@@ -1,5 +1,5 @@
 <!-- ##### Breadcumb Area Start ##### -->
-<div class="breadcumb_area bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-30.png);">
+<div class="breadcumb_area bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-bg.png);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">

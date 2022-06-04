@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Login Re-Cloth</title>
+<link rel="icon" href="<?= base_url() ?>assets/img/core-img/TSS-logo.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -29,7 +30,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="submit"><input type="submit" onclick="myFunction()" value="Login"></div>
 			<?php if ($this->session->flashdata('pesan')!=null):?><div class="alert alert-warning" style="margin-top:10px;"><?=$this->session->flashdata('pesan');?></div> <?php endif?>
 		    <ul class="new">
-				<li style="margin-left:70px;"><p class="sign">Login Sebagai Penjual? <a href="<?= base_url(); ?>login/penjual"> Login</a></p></li>
+				<li style="margin-left:70px;"><p class="sign">Login Sebagai Penjual?<a href="<?= base_url(); ?>login/penjual"> Login</a></p></li>
 			    <li style="margin-left:140px;"><p class="sign">New here ?</p></li>
 				<li style="margin-left:60px;"><p class="sign"><a href="<?= base_url(); ?>register/pembeli"> Register Pembeli</a> / <a href="<?= base_url(); ?>register/penjual"> Register Penjual</a></p></li>
 			    <div class="clearfix"></div>

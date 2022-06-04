@@ -1,5 +1,5 @@
 <!-- ##### Breadcumb Area Start ##### -->
-<div class="breadcumb_area bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-30.png);">
+<div class="breadcumb_area bg-img" style="background-image: url(<?= base_url() ?>assets/img/bg-img/TSS-bg.png);">
 	<div class="container h-100">
 		<div class="row h-100 align-items-center">
 			<div class="col-12">
@@ -39,7 +39,7 @@
                     <td><?=$ad->email_penjual?></td>
                     <td><?=$ad->nama_level?></td>
                     <td>
-                        <a href="#ubah" data-toggle="modal" onclick="edit(<?=$ad->id_penjual?>)" class="btn btn-danger btn-sm">
+                        <a href="#ubah" data-toggle="modal" onclick="edit(<?=$ad->id_penjual?>)" class="btn btn-primary btn-sm">
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                         </a> 
                         <a href="<?=base_url('user_penjual/hapus/'.$ad->id_penjual)?>" onclick="return confirm('apakah anda yakin untuk menghapus?')" class="btn btn-danger btn-sm">

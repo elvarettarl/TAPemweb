@@ -10,32 +10,32 @@ class Kategori extends CI_Controller {
 		$this->load->model('m_kategori');
 	}
 	
-	public function makananminuman()
+	public function jaket()
 	{
-		$data['produk']=$this->m_produk->ambilmakanan();
-		$data['content']="v_kat_makanan";
+		$data['produk']=$this->m_produk->ambiljaket();
+		$data['content']="v_kat_jaket";
 		$this->load->view('template', $data);
 	}
 
-	public function pakaian()
+	public function kaos()
 	{
-		$data['produk']=$this->m_produk->ambilpakaian();
-		$data['content']="v_kat_pakaian";
+		$data['produk']=$this->m_produk->ambilkaos();
+		$data['content']="v_kat_kaos";
 		$this->load->view('template', $data);
 	}
 
-	public function kecantikan()
+	public function kemeja()
 	{
 		// var_dump(count($this->cart->contents()));die;
-		$data['produk']=$this->m_produk->ambilkecantikan();
-		$data['content']="v_kat_kecantikan";
+		$data['produk']=$this->m_produk->ambilkemeja();
+		$data['content']="v_kat_kemeja";
 		$this->load->view('template', $data);
 	}
 
-	public function peralatanatk()
+	public function celana()
 	{
-		$data['produk']=$this->m_produk->ambilalattulis();
-		$data['content']="v_kat_alattulis";
+		$data['produk']=$this->m_produk->ambilcelana();
+		$data['content']="v_kat_celana";
 		$this->load->view('template', $data);
 	}
 	public function tambah(){

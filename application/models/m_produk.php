@@ -30,7 +30,7 @@ class M_produk extends CI_Model {
         return $ambilkategori;
     }
 
-    public function ambilmakanan(){
+    public function ambiljaket(){
         $ambilproduk = $this->db->join('penjual','penjual.id_penjual=produk.id_penjual')
                                 ->where('id_kategori','1')
                                 ->get('produk')
@@ -38,7 +38,7 @@ class M_produk extends CI_Model {
         return $ambilproduk;
     }
 
-    public function ambilpakaian(){
+    public function ambilkaos(){
         $ambilproduk = $this->db->join('penjual','penjual.id_penjual=produk.id_penjual')
                                 ->where('id_kategori','2')
                                 ->get('produk')
@@ -46,7 +46,7 @@ class M_produk extends CI_Model {
         return $ambilproduk;
     }
 
-    public function ambilkecantikan(){
+    public function ambilkemeja(){
         $ambilproduk = $this->db->join('penjual','penjual.id_penjual=produk.id_penjual')
                                 ->where('id_kategori','3')
                                 ->get('produk')
@@ -54,7 +54,7 @@ class M_produk extends CI_Model {
         return $ambilproduk;
     }
 
-    public function ambilalattulis(){
+    public function ambilcelana(){
         $ambilproduk = $this->db->join('penjual','penjual.id_penjual=produk.id_penjual')
                                 ->where('id_kategori','4')
                                 ->get('produk')

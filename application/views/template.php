@@ -12,7 +12,7 @@
 	<title>Re-Cloth</title>
 
 	<!-- Favicon  -->
-	<link rel="icon" href="<?= base_url() ?>assets/img/core-img/favicon.ico">
+	<link rel="icon" href="<?= base_url() ?>assets/img/core-img/TSS-logo.png">
 
 	<!-- Core Style CSS -->
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/core-style.css">
@@ -28,7 +28,7 @@
 			<nav class="classy-navbar" id="essenceNav">
 				<!-- Logo -->
 				<a class="nav-brand" href="<?= base_url() ?>Dashboard"><img
-						src="<?= base_url() ?>assets/img/core-img/logo3.png" alt=""></a>
+						src="<?= base_url() ?>assets/img/core-img/TSS-logo.png" alt=""></a>
 				<!-- Navbar Toggler -->
 				<div class="classy-navbar-toggler">
 					<span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -45,17 +45,17 @@
 							<li><a href="#">Category</a>
 								<div class="megamenu">
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/makananminuman">Jaket</a>
+										<li><a href="<?= base_url() ?>kategori/jaket">Jaket</a>
 										</li>
 									</ul>
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/pakaian">Kaos</a></li>
+										<li><a href="<?= base_url() ?>kategori/kaos">Kaos</a></li>
 									</ul>
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/kecantikan">Kemeja</a></li>
+										<li><a href="<?= base_url() ?>kategori/kemeja">Kemeja</a></li>
 									</ul>
 									<ul class="single-mega cn-col-4">
-										<li><a href="<?= base_url() ?>kategori/peralatanatk">Celana</a></li>
+										<li><a href="<?= base_url() ?>kategori/celana">Celana</a></li>
 									</ul>
 								</div>
 							</li>
@@ -204,7 +204,7 @@
 					<div class="single_widget_area d-flex mb-30">
 						<!-- Logo -->
 						<div class="footer-logo mr-50">
-							<a href="#"><img src="<?= base_url() ?>assets/img/core-img/logo3.png" alt=""></a>
+							<a href="#"><img src="<?= base_url() ?>assets/img/core-img/TSS-logo.png" alt=""></a>
 						</div>
 						<!-- Footer Menu -->
 						<div class="footer_menu">

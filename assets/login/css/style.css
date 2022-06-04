@@ -2036,7 +2036,7 @@ h2.form-heading {
   width: 100%;
 }
 body#login{
-  background: url(../images/bg-login.png)no-repeat;
+  background: url(../images/TSS_login.png)no-repeat;
   background-color: white;
   background-size:cover;
   -webkit-background-size:900px;
@@ -2046,7 +2046,7 @@ body#login{
   min-height: 665px;
 }
 body#register{
-  background: url(../images/bg-register.png)no-repeat;
+  background: url(../images/TSS_register.png)no-repeat;
   background-color: white;
   background-size:cover;
   -webkit-background-size:900px;
@@ -2062,12 +2062,12 @@ body#register{
 .app-cam input[type="text"] {
   width: 100%;
   padding: 15px;
-  color: rgb(253, 249, 249);
+  color: #000000;
   font-size: 0.85em;
   outline: none;
   font-weight: 300;
   border: none;
-  background:#e93030;
+  background:#e6f5e7;
   margin:0 0 1em 0;
   border-radius: 5px;
   -webkit-border-radius: 2px;
@@ -2077,12 +2077,12 @@ body#register{
 .app-cam input[type="password"] {
   width: 100%;
   padding: 15px;
-  color:rgb(253, 249, 249);
+  color: #000000;
   font-size: 0.85em;
   outline: none;
   font-weight: 300;
   border: none;
-  background:#e93030;
+  background:#e6f5e7;
   margin:0 0 1em 0;
   border-radius: 2px;
   -webkit-border-radius: 2px;
