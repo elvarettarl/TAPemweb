@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2019 at 09:11 AM
--- Server version: 10.1.25-MariaDB
--- PHP Version: 5.6.31
+-- Waktu pembuatan: 06 Jun 2022 pada 06.26
+-- Versi server: 10.4.22-MariaDB
+-- Versi PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pkk1`
+-- Database: `recloth`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE `admin` (
@@ -37,17 +36,18 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `admin`
+-- Dumping data untuk tabel `admin`
 --
 
 INSERT INTO `admin` (`id_admin`, `email_admin`, `password`, `nama_admin`, `id_level`) VALUES
-(1, 'firda', 'firda', 'firda', 1),
-(3, 'rizal', 'rizal', 'Rizal Agus', 1);
+(3, 'rizal', 'rizal', 'Rizal Agus', 1),
+(4, 'ighfar', 'haha', 'ighfar', 1),
+(5, 'riyan', 'riyan', 'riyan', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kategori`
+-- Struktur dari tabel `kategori`
 --
 
 CREATE TABLE `kategori` (
@@ -56,20 +56,20 @@ CREATE TABLE `kategori` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kategori`
+-- Dumping data untuk tabel `kategori`
 --
 
 INSERT INTO `kategori` (`id_kategori`, `nama_kategori`) VALUES
-(1, 'makanan&minuman'),
-(2, 'pakaian'),
-(3, 'kecantikan'),
-(4, 'alattulis'),
-(5, 'lainlain');
+(1, 'jaket'),
+(2, 'kaos'),
+(3, 'kemeja'),
+(4, 'celana'),
+(5, 'lain-lain');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `level`
+-- Struktur dari tabel `level`
 --
 
 CREATE TABLE `level` (
@@ -78,7 +78,7 @@ CREATE TABLE `level` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `level`
+-- Dumping data untuk tabel `level`
 --
 
 INSERT INTO `level` (`id_level`, `nama_level`) VALUES
@@ -89,7 +89,7 @@ INSERT INTO `level` (`id_level`, `nama_level`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pembeli`
+-- Struktur dari tabel `pembeli`
 --
 
 CREATE TABLE `pembeli` (
@@ -102,19 +102,19 @@ CREATE TABLE `pembeli` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pembeli`
+-- Dumping data untuk tabel `pembeli`
 --
 
 INSERT INTO `pembeli` (`id_pembeli`, `nama_pembeli`, `kelas`, `email_pembeli`, `password`, `id_level`) VALUES
-(2, 'rizal1', '', '123', 'rizal1', 2),
-(6, 'Nabil XIIR2', '', 'nabil', '123', 2),
-(7, 'Firda XIIR2', '', 'firda', '123', 2),
-(8, 'Rizal', 'XIIR2', 'rizal', '123', 2);
+(2, 'elva', 'pemweb-d', 'elva', 'haha', 2),
+(6, 'riyan', 'pemweb-d', 'riyan', 'haha', 2),
+(7, 'Adib', 'pemweb-d', 'Adib', 'haha', 2),
+(8, 'Rizal', 'pemweb-d', 'rizal', '123', 2);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `penjual`
+-- Struktur dari tabel `penjual`
 --
 
 CREATE TABLE `penjual` (
@@ -126,17 +126,18 @@ CREATE TABLE `penjual` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `penjual`
+-- Dumping data untuk tabel `penjual`
 --
 
 INSERT INTO `penjual` (`id_penjual`, `nama_penjual`, `email_penjual`, `password`, `id_level`) VALUES
-(1, 'firda', 'firda', '123', 3),
-(2, 'Tes', 'tes', '123', 3);
+(1, 'Wirda', 'Wirda', 'haha', 3),
+(2, 'Mansur', 'Mansur', 'haha', 3),
+(3, 'ighfar', 'ighfar', 'haha', 3);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `produk`
+-- Struktur dari tabel `produk`
 --
 
 CREATE TABLE `produk` (
@@ -151,26 +152,39 @@ CREATE TABLE `produk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `produk`
+-- Dumping data untuk tabel `produk`
 --
 
 INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga`, `stok`, `deskripsi`, `gambar`, `id_kategori`, `id_penjual`) VALUES
-(2, 'Bedak', 10000, 23, '1', 'TSS-211.png', 3, 1),
-(3, 'Kentang Goreng', 2000, 1, 'Pedas', 'TSS-253.png', 1, 1),
-(4, 'Atasan', 30000, 3, 'Warna Merah', 'TSS-141.png', 2, 1),
-(5, 'Penghapus', 5000, 9, 'Merk Faber Castell', 'TSS-322.png', 4, 1),
-(6, 'Fanta', 3000, 4, 'Rasa Stroberi', 'TSS-281.png', 1, 1),
-(7, 'Samyang', 4000, 8, 'Pedas', 'TSS-241.png', 1, 2);
+(2, 'Kemeja FourReason', 35000, 4, 'Kualitas Premium\r\nReady: L(minus luntur warna), M', 'TSS-kemeja1.jpg', 3, 3),
+(3, 'Jaket Polos Pull&Bear', 45000, 1, 'Kualitas Premium Import\r\nAllsize\r\nMinus Luntur', 'TSS-jaket2.jpg', 1, 3),
+(4, 'Kaos Polos H&M Putih', 12000, 3, 'Bahan soft\r\nKualitas Premium\r\nAll size fit to M', 'TSS-kaos1.jpg', 2, 1),
+(5, 'Celana Wanita Kain Cream', 33000, 9, 'Kualitas Premium\r\nMade by Maulmiese\r\nLike new', 'TSS-celana1.jpg', 4, 3),
+(6, 'Bomber Hitam Berskha Allsize', 32500, 1, 'Kualitas Import\r\nBahan Premium\r\nAllsize fit to L', 'TSS-jaket3.jpg', 1, 2),
+(7, 'Jaket Gunung Space Grey', 60000, 1, 'Kualitas Import\r\nBahan Premium Satin\r\nLike new', 'TSS-jaket4.jpg', 1, 2),
+(8, 'Jaket Zipper Maroon', 35000, 2, 'Full Premium Import, Allsize', 'TSS-jaket5.jpg', 1, 1),
+(10, 'Jaket Zipper Zara Yellow Neon', 23000, 1, 'Kualitas Premium Import\r\nAllsize\r\nMinus noda di bagian bahu', 'TSS-jaket1.jpg', 1, 2),
+(11, 'Kaos Putih UNIQLO', 11000, 2, 'Premium\r\nminus gambar luntur\r\ngratis ongkir', 'TSS-kaos2.jpg', 2, 2),
+(12, 'Kaos Hitam Polos UNISEX Dior', 149999, 1, 'Real Pic Dior\r\nUNISEX\r\nAll size fit to M', 'TSS-kaos3.jpg', 2, 1),
+(13, 'Kaos Pria Hitam Pull&Bear', 31000, 1, 'Premium\r\nLike new\r\nAll size fit to M', 'TSS-kaos4.jpg', 2, 2),
+(14, 'Kaos Putih Wanita Calvin Klein Jeans', 135000, 1, 'Kualitas premium\r\nbaru dipakai 1 bulan\r\nreal pic', 'TSS-kaos5.jpg', 2, 3),
+(15, 'Kemeja Fourseason Likenew', 35000, 1, 'Likenew\r\nPemakaian kurang dari 2 minggu', 'TSS-kemeja2.jpg', 3, 1),
+(16, 'Kemeja Polos Alisan', 15000, 4, 'Ready: Peach (M), Perfect Red (S,M,L)', 'TSS-kemeja3.jpg', 3, 2),
+(17, 'Kemeja Polos Alisan Cacat', 9000, 2, 'Ready: Peach (M,XL)\r\nminus kaputan tidak rapi terbuka bagian ketiak', 'TSS-kemeja4.jpg', 3, 2),
+(18, 'Celana Slim Pensil Wanita Jeans Sky Blue', 60999, 4, 'Kualitas Premium\r\nMade by Maulmiese\r\nMinus garis di bagian lutut belakang', 'TSS-celana2.jpg', 4, 3),
+(19, 'Jeans Blue Wanita Allsize', 60000, 2, 'Premium\r\nALl size fit to XL', 'TSS-celana3.jpg', 4, 1),
+(20, 'Celana Kulot Putih Allsize', 32500, 1, 'Kualitas Premium\r\nPutih Bening\r\nAllsize fit to M', 'TSS-celana4.jpg', 4, 2),
+(21, 'Celana Kain Formal Hitam UNISEX', 45000, 1, 'Kualitas Like new\r\nno minus\r\nreal pic', 'TSS-celana5.jpg', 4, 3);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `transaksi`
+-- Struktur dari tabel `transaksi`
 --
 
 CREATE TABLE `transaksi` (
   `id_transaksi` int(11) NOT NULL,
-  `waktu` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `waktu` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `id_produk` int(11) NOT NULL,
   `jumlah` int(11) NOT NULL,
   `total` int(11) NOT NULL,
@@ -179,7 +193,7 @@ CREATE TABLE `transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `transaksi`
+-- Dumping data untuk tabel `transaksi`
 --
 
 INSERT INTO `transaksi` (`id_transaksi`, `waktu`, `id_produk`, `jumlah`, `total`, `id_pembeli`, `status`) VALUES
@@ -196,47 +210,49 @@ INSERT INTO `transaksi` (`id_transaksi`, `waktu`, `id_produk`, `jumlah`, `total`
 (14, '2019-12-04 08:10:34', 6, 1, 3000, 8, 'Diterima'),
 (15, '2019-12-04 08:06:16', 3, 1, 2000, 8, 'Diterima'),
 (16, '2019-12-03 09:27:26', 7, 1, 4000, 8, 'Proses'),
-(17, '2019-12-03 03:33:46', 7, 1, 4000, 8, 'proses');
+(17, '2019-12-03 03:33:46', 7, 1, 4000, 8, 'proses'),
+(18, '2022-06-03 23:37:32', 15, 1, 35000, 2, 'Proses'),
+(19, '2022-06-03 23:41:42', 6, 1, 32500, 2, 'Proses');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `admin`
+-- Indeks untuk tabel `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id_admin`),
   ADD KEY `id_level` (`id_level`);
 
 --
--- Indexes for table `kategori`
+-- Indeks untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
   ADD PRIMARY KEY (`id_kategori`);
 
 --
--- Indexes for table `level`
+-- Indeks untuk tabel `level`
 --
 ALTER TABLE `level`
   ADD PRIMARY KEY (`id_level`);
 
 --
--- Indexes for table `pembeli`
+-- Indeks untuk tabel `pembeli`
 --
 ALTER TABLE `pembeli`
   ADD PRIMARY KEY (`id_pembeli`),
   ADD KEY `id_level` (`id_level`);
 
 --
--- Indexes for table `penjual`
+-- Indeks untuk tabel `penjual`
 --
 ALTER TABLE `penjual`
   ADD PRIMARY KEY (`id_penjual`),
   ADD KEY `id_level` (`id_level`);
 
 --
--- Indexes for table `produk`
+-- Indeks untuk tabel `produk`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`id_produk`),
@@ -244,7 +260,7 @@ ALTER TABLE `produk`
   ADD KEY `id_user` (`id_penjual`);
 
 --
--- Indexes for table `transaksi`
+-- Indeks untuk tabel `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD PRIMARY KEY (`id_transaksi`),
@@ -252,75 +268,82 @@ ALTER TABLE `transaksi`
   ADD KEY `id_pembeli` (`id_pembeli`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
--- AUTO_INCREMENT for table `kategori`
+-- AUTO_INCREMENT untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
   MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
--- AUTO_INCREMENT for table `level`
+-- AUTO_INCREMENT untuk tabel `level`
 --
 ALTER TABLE `level`
   MODIFY `id_level` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
--- AUTO_INCREMENT for table `pembeli`
+-- AUTO_INCREMENT untuk tabel `pembeli`
 --
 ALTER TABLE `pembeli`
   MODIFY `id_pembeli` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
 --
--- AUTO_INCREMENT for table `penjual`
+-- AUTO_INCREMENT untuk tabel `penjual`
 --
 ALTER TABLE `penjual`
-  MODIFY `id_penjual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_penjual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
--- AUTO_INCREMENT for table `produk`
+-- AUTO_INCREMENT untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
 --
--- AUTO_INCREMENT for table `transaksi`
+-- AUTO_INCREMENT untuk tabel `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `admin`
+-- Ketidakleluasaan untuk tabel `admin`
 --
 ALTER TABLE `admin`
   ADD CONSTRAINT `admin_ibfk_1` FOREIGN KEY (`id_level`) REFERENCES `level` (`id_level`);
 
 --
--- Constraints for table `pembeli`
+-- Ketidakleluasaan untuk tabel `pembeli`
 --
 ALTER TABLE `pembeli`
   ADD CONSTRAINT `pembeli_ibfk_1` FOREIGN KEY (`id_level`) REFERENCES `level` (`id_level`);
 
 --
--- Constraints for table `penjual`
+-- Ketidakleluasaan untuk tabel `penjual`
 --
 ALTER TABLE `penjual`
   ADD CONSTRAINT `penjual_ibfk_1` FOREIGN KEY (`id_level`) REFERENCES `level` (`id_level`);
 
 --
--- Constraints for table `produk`
+-- Ketidakleluasaan untuk tabel `produk`
 --
 ALTER TABLE `produk`
   ADD CONSTRAINT `produk_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`),
   ADD CONSTRAINT `produk_ibfk_2` FOREIGN KEY (`id_penjual`) REFERENCES `penjual` (`id_penjual`);
 
 --
--- Constraints for table `transaksi`
+-- Ketidakleluasaan untuk tabel `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_pembeli`) REFERENCES `pembeli` (`id_pembeli`);
