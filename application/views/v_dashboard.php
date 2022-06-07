@@ -134,7 +134,7 @@
                                 <a href="single-product-details.html">
                                     <h6>Atasan Wanita Crewneck Peach</h6>
                                 </a>
-                                <p class="product-price">Rp.25.000</p>
+                                <p class="product-price">Rp.35.000</p>
 
                                 <!-- Hover Content -->
                                 <!-- <div class="hover-content"> -->

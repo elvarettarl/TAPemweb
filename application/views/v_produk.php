@@ -107,7 +107,7 @@
                 <h4 class="modal-title">Tambah Produk</h4>
                 <button type="button" class="close" data-dismiss="modal">
                     <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
+                    <span class="sr-only">Tutup</span>
                 </button>
             </div>
             <div class="modal-body">
@@ -150,7 +150,7 @@
 				<h4 class="modal-title">Ubah Produk</h4>
                 <button type="button" class="close" data-dismiss="modal">
                     <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
+                    <span class="sr-only">Tutup</span>
                 </button>
 			</div>	
 			<div class="modal-body">
