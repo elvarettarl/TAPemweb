@@ -23,8 +23,5 @@ class User_admin extends CI_Controller {
 		redirect('tabel/user_admin');
 	}
 
-	public function hapus($id_admin){
-		$this->m_user_admin->hapus($id_admin);
-		redirect('tabel/user_admin');
-	}
+
 }
