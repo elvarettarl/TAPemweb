@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center">
-                        <h2>Popular Products</h2>
+                        <h2>Trending Products</h2>
                     </div>
                 </div>
             </div>
