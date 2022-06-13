@@ -28,6 +28,6 @@ class Register extends CI_Controller {
     public function tambah_penjual()
     {
         $this->m_login->tambah_penjual();
-        redirect('login/pembeli');
+        redirect('login/penjual');
     }
 }
