@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Jun 2022 pada 06.26
+-- Waktu pembuatan: 16 Jun 2022 pada 15.52
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.1.2
 
@@ -40,7 +40,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_admin`, `email_admin`, `password`, `nama_admin`, `id_level`) VALUES
-(3, 'rizal', 'rizal', 'Rizal Agus', 1),
+(3, 'rizal', 'haha', 'Rizal Agus', 1),
 (4, 'ighfar', 'haha', 'ighfar', 1),
 (5, 'riyan', 'riyan', 'riyan', 1);
 
@@ -132,7 +132,8 @@ CREATE TABLE `penjual` (
 INSERT INTO `penjual` (`id_penjual`, `nama_penjual`, `email_penjual`, `password`, `id_level`) VALUES
 (1, 'Wirda', 'Wirda', 'haha', 3),
 (2, 'Mansur', 'Mansur', 'haha', 3),
-(3, 'ighfar', 'ighfar', 'haha', 3);
+(3, 'ighfar', 'ighfar', 'haha', 3),
+(4, 'budi', 'budi', 'budi', 3);
 
 -- --------------------------------------------------------
 
@@ -156,10 +157,9 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga`, `stok`, `deskripsi`, `gambar`, `id_kategori`, `id_penjual`) VALUES
-(2, 'Kemeja FourReason', 35000, 4, 'Kualitas Premium\r\nReady: L(minus luntur warna), M', 'TSS-kemeja1.jpg', 3, 3),
-(3, 'Jaket Polos Pull&Bear', 45000, 1, 'Kualitas Premium Import\r\nAllsize\r\nMinus Luntur', 'TSS-jaket2.jpg', 1, 3),
+(2, 'Kemeja FourReason (barang baru)', 35000, 4, 'Kualitas PremiumReady: L(minus luntur warna), M', 'TSS-kemeja1.jpg', 3, 3),
 (4, 'Kaos Polos H&M Putih', 12000, 3, 'Bahan soft\r\nKualitas Premium\r\nAll size fit to M', 'TSS-kaos1.jpg', 2, 1),
-(5, 'Celana Wanita Kain Cream', 33000, 9, 'Kualitas Premium\r\nMade by Maulmiese\r\nLike new', 'TSS-celana1.jpg', 4, 3),
+(5, 'Celana Wanita Kain Cream', 33000, 8, 'Kualitas Premium\r\nMade by Maulmiese\r\nLike new', 'TSS-celana1.jpg', 4, 3),
 (6, 'Bomber Hitam Berskha Allsize', 32500, 1, 'Kualitas Import\r\nBahan Premium\r\nAllsize fit to L', 'TSS-jaket3.jpg', 1, 2),
 (7, 'Jaket Gunung Space Grey', 60000, 1, 'Kualitas Import\r\nBahan Premium Satin\r\nLike new', 'TSS-jaket4.jpg', 1, 2),
 (8, 'Jaket Zipper Maroon', 35000, 2, 'Full Premium Import, Allsize', 'TSS-jaket5.jpg', 1, 1),
@@ -170,11 +170,12 @@ INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga`, `stok`, `deskripsi`, 
 (14, 'Kaos Putih Wanita Calvin Klein Jeans', 135000, 1, 'Kualitas premium\r\nbaru dipakai 1 bulan\r\nreal pic', 'TSS-kaos5.jpg', 2, 3),
 (15, 'Kemeja Fourseason Likenew', 35000, 1, 'Likenew\r\nPemakaian kurang dari 2 minggu', 'TSS-kemeja2.jpg', 3, 1),
 (16, 'Kemeja Polos Alisan', 15000, 4, 'Ready: Peach (M), Perfect Red (S,M,L)', 'TSS-kemeja3.jpg', 3, 2),
-(17, 'Kemeja Polos Alisan Cacat', 9000, 2, 'Ready: Peach (M,XL)\r\nminus kaputan tidak rapi terbuka bagian ketiak', 'TSS-kemeja4.jpg', 3, 2),
+(17, 'Kemeja Polos Alisan Cacat', 9000, 1, 'Ready: Peach (M,XL)\r\nminus kaputan tidak rapi terbuka bagian ketiak', 'TSS-kemeja4.jpg', 3, 2),
 (18, 'Celana Slim Pensil Wanita Jeans Sky Blue', 60999, 4, 'Kualitas Premium\r\nMade by Maulmiese\r\nMinus garis di bagian lutut belakang', 'TSS-celana2.jpg', 4, 3),
 (19, 'Jeans Blue Wanita Allsize', 60000, 2, 'Premium\r\nALl size fit to XL', 'TSS-celana3.jpg', 4, 1),
 (20, 'Celana Kulot Putih Allsize', 32500, 1, 'Kualitas Premium\r\nPutih Bening\r\nAllsize fit to M', 'TSS-celana4.jpg', 4, 2),
-(21, 'Celana Kain Formal Hitam UNISEX', 45000, 1, 'Kualitas Like new\r\nno minus\r\nreal pic', 'TSS-celana5.jpg', 4, 3);
+(21, 'Celana Kain Formal Hitam UNISEX', 45000, 1, 'Kualitas Like new\r\nno minus\r\nreal pic', 'TSS-celana5.jpg', 4, 3),
+(22, 'a', 10000, 1, 'a', 'TSS-kemeja61.jpg', 3, 3);
 
 -- --------------------------------------------------------
 
@@ -212,7 +213,9 @@ INSERT INTO `transaksi` (`id_transaksi`, `waktu`, `id_produk`, `jumlah`, `total`
 (16, '2019-12-03 09:27:26', 7, 1, 4000, 8, 'Proses'),
 (17, '2019-12-03 03:33:46', 7, 1, 4000, 8, 'proses'),
 (18, '2022-06-03 23:37:32', 15, 1, 35000, 2, 'Proses'),
-(19, '2022-06-03 23:41:42', 6, 1, 32500, 2, 'Proses');
+(19, '2022-06-03 23:41:42', 6, 1, 32500, 2, 'Proses'),
+(20, '2022-06-07 02:56:18', 17, 1, 9000, 2, 'Proses'),
+(21, '2022-06-07 02:56:18', 5, 1, 33000, 2, 'Proses');
 
 --
 -- Indexes for dumped tables
@@ -275,7 +278,7 @@ ALTER TABLE `transaksi`
 -- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategori`
@@ -299,19 +302,19 @@ ALTER TABLE `pembeli`
 -- AUTO_INCREMENT untuk tabel `penjual`
 --
 ALTER TABLE `penjual`
-  MODIFY `id_penjual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_penjual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT untuk tabel `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
